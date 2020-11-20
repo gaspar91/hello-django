@@ -10,3 +10,7 @@ def get_todo_list(request):
     }
     # this last items is the items variable we've just created
     return render(request, 'todo/todo_list.html', context)
+
+
+def add_item(request):
+    return render(request, 'todo/add_item.html')
